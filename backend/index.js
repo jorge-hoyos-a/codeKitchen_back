@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app1 = express();
-const port = 5000;
+const port = process.env.PORT || 3030;
 
 const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/errorHandler')
 
