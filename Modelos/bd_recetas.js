@@ -6,8 +6,7 @@ let esquema = mongoose.Schema({
     ingredientes:String,
     imagen:String,
     porciones:Number,
-    instrucciones:String,
-    idUsuario: String,
+    instrucciones:String
 })
 
 //Línea que crea en la bbdd el campo de creado y actualizado en una fecha

@@ -7,7 +7,7 @@ const porciones = Joi.number().integer().min(1);
 const ingredientes = Joi.string();
 const imagen = Joi.string().uri();
 const instrucciones = Joi.string();
-const idUsuario = Joi.string()
+
 
 const crearRecetaSchema = Joi.object({
     nombre: nombre.required(),
@@ -15,8 +15,7 @@ const crearRecetaSchema = Joi.object({
     porciones: porciones.required(),
     ingredientes: ingredientes.required(),
     imagen: imagen.required(),
-    instrucciones: instrucciones.required(),
-    idUsuario: idUsuario.required()
+    instrucciones: instrucciones.required()
 })
 
 const getRecetaSchema = Joi.object({
@@ -30,7 +29,6 @@ const actualizarRecetaSchema = Joi.object({
     ingredientes: ingredientes,
     imagen: imagen,
     instrucciones: instrucciones,
-    idUsuario: idUsuario
 })
 
 module.exports = { crearRecetaSchema, getRecetaSchema, actualizarRecetaSchema };
